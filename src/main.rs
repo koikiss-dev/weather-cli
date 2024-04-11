@@ -23,7 +23,7 @@ enum Commands {
 
 #[derive(Args)]
 struct SearchByCity {
-    /// Nombre de la ciudad, si va con espacios escribirla con doble comilla -> ""
+    /// Nombre de la ciudad, si va con espacios escribirla con doble comilla ""
     #[arg(short, long)]
     name: String,
 }
