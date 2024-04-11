@@ -11,9 +11,6 @@ pub struct WheaterApi {
     url_main: String,
     api_key_query: Vec<(String, String)>,
 }
-pub struct Example {
-    id: i32,
-}
 
 /// esta es la estructura de respuesta
 
@@ -134,7 +131,6 @@ impl WheaterApi {
 
         let message_error = format!("{}{}{}", "Error en: ", lat, lon);
         self.check_request(request, &message_error).await
-        //todo!()
     }
 
     // para confirmar si la funcion fue consultada con exito
