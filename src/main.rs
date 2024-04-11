@@ -46,8 +46,6 @@ async fn main() {
     let api_key = std::env::var("appid").expect("api token for wheather consults");
     let mut wheater_functions = WheaterApi::new(api_key);
 
-    let mut builder = Builder::default();
-    builder.push_record(["Name", "Code", "Id", "Latitude", "Longitude", "Clouds"]);
     match cli.cmd {
         Commands::City(name) => {
             let result_from_request = wheater_functions.search_by_city(&name.name).await;
