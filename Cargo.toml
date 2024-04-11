@@ -1,6 +1,6 @@
 workspace = { members = ["crates/call-api"] }
 [package]
-name = "weater-cli"
+name = "weather-cli"
 version = "0.1.0"
 edition = "2021"
 
